@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+$primary-color: #258ED5;
+
+$topbar-background: $primary-color;
+
+@import '~foundation-sites/scss/foundation';
+
+@include foundation-everything;

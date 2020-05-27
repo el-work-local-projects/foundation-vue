@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
-	<div class="app-content grid-container">Content</div>
+	<div class="app-content grid-container" style="display: flex; align-items: center; justify-content: center;">
+		<h3>Working with this framework stinks.</h3>
+	</div>
 	<FrameFooter></FrameFooter>
   </div>
 </template>
@@ -21,7 +23,6 @@ export default {
 
 <style>
 	@import "../node_modules/@mdi/font/css/materialdesignicons.min.css";
-	@import "../node_modules/foundation-sites/dist/css/foundation.min.css";
 	
 	html {
 		height: 100%;

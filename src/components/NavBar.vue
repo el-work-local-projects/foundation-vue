@@ -28,10 +28,11 @@
 		<div class="top-bar-right">
 			<ul class="dropdown menu" data-dropdown-menu>
 				<li>
-					<a href="#" style="padding-right: 0;">
+					<a href="#" style="padding-right: 0;" data-open="frameMessageModal">
 						<span class="mdi mdi-message" style="font-size: 18px"></span>
-						<span style="position: relative; left: -8px; top: 5px;" class="badge success">5</span>
+						<span style="position: relative; left: -8px; top: 5px;" class="badge success">2</span>
 					</a>
+					<frame-message-viewer></frame-message-viewer>
 				</li>
 				<li class="has-submenu">
 					<a href="#">
@@ -58,6 +59,8 @@
 </template>
 
 <script>
+	import FrameMessageViewer from './FrameMessageViewer.vue'
+	
 	export default {
 		name: 'NavBar',
 		data: () => {
@@ -73,6 +76,9 @@
 				],
 				samewindow: false
 			}
+		},
+		components: {
+			FrameMessageViewer
 		}
 	}
 </script>
@@ -83,5 +89,11 @@
 <style scoped>
 	#header {
 		height: 50px;
+	}
+	#header div ul li a {
+		color: white;
+	}
+	#header div ul li a::after {
+		color: white;
 	}
 </style>
